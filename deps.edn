@@ -41,9 +41,11 @@
  ;;   "central" {:url "https://repo1.maven.org/maven2/"}
  ;;   "clojars" {:url "https://repo.clojars.org/"}
  ;; }
- :aliases
- {:new {:extra-deps {seancorfield/clj-new
-                     {:mvn/version "0.7.8"}}
-        :main-opts ["-m" "clj-new.create"]}}
+ :aliases {
+           :new {:extra-deps {seancorfield/clj-new {:mvn/version "0.7.8"}}
+                 :main-opts ["-m" "clj-new.create"]}
 
- }
+           :rebel {:extra-deps {com.bhauman/rebel-readline {:mvn/version "0.1.4"}}
+                   :main-opts  ["-m" "rebel-readline.main"]}
+         }
+}
