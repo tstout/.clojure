@@ -43,6 +43,12 @@
  :aliases {:new {:extra-deps {seancorfield/clj-new {:mvn/version "0.7.8"}}
                  :main-opts ["-m" "clj-new.create"]}
 
+           :find-deps {:extra-deps
+                       {find-deps
+                        {:git/url "https://github.com/hagmonk/find-deps"
+                         :sha "6fc73813aafdd2288260abb2160ce0d4cdbac8be"}}
+                       :main-opts ["-m" "find-deps.core"]}
+
            :rebel {:extra-deps {com.bhauman/rebel-readline {:mvn/version "0.1.4"}}
                    :main-opts  ["-m" "rebel-readline.main"]}
 
