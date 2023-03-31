@@ -52,18 +52,18 @@
            :deps-new {:extra-deps
                       {deps-new/deps-new
                        {:git/url "https://github.com/tstout/deps-new"
-                        :sha "d64cf18"
-                        :tag "v1.0.38"}}
+                        :sha "f331a5f"
+                        :tag "v1.0.39"}}
                       :main-opts ["-m" "deps-new.core"]}
 
 
            :depify {:extra-deps {org.clojure/clojure {:mvn/version "1.9.0"}
-                      depify              {:git/url "https://github.com/hagmonk/depify"
-                                           :sha     "04329744872890711dbba8939a16e9987dd33bb3"}}
+                                 depify              {:git/url "https://github.com/hagmonk/depify"
+                                                      :sha     "04329744872890711dbba8939a16e9987dd33bb3"}}
                     :main-opts  ["-m" "depify.project"]}
 
            :zprint {:extra-deps {org.clojure/clojure {:mvn/version "1.9.0"}
-                      zprint              {:mvn/version "0.4.9"}}
+                                 zprint              {:mvn/version "0.4.9"}}
                     :main-opts  ["-m" "zprint.main"]}
 
            :rebel {:extra-deps {com.bhauman/rebel-readline {:mvn/version "0.1.4"}}
